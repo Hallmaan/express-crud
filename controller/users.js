@@ -1,5 +1,6 @@
 const db = require('../lib/database');
 const userModel = require('../model/usersModel');
+const jwt = require('jsonwebtoken');
 
 module.exports = {
     signUp: async (req,res,next) => {
